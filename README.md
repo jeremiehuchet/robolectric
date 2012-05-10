@@ -33,9 +33,9 @@ You can configure your maven project to set this system property when running JU
         <build>
             <plugins>
                 <plugin>
-                    <groupId></groupId>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
-                    <version></version>
+                    <version>2.12</version>
                     <configuration>
                         <systemPropertyVariables>
                             <!-- Use target/roboelectric-cache for Roboelectric temporary classes -->
