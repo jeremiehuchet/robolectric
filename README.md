@@ -14,6 +14,8 @@ About this fork
 
 It aims to provide a better way to integrate Roboelectric with maven allowing users to customize the path of the Roboelectric classes cache directory. Setting this directory to `${basedir}/target/some_temp_dir` makes more sense rather than `${basedir}/tmp`. 
 
+Modifications made here have been pulled to upstream project in [Pull Request 185](https://github.com/pivotal/robolectric/pull/185) and released in [Roboelectric 1.1](https://github.com/pivotal/robolectric). 
+
 You can set a system property named `cached.robolectric.classes.path` if the path denoted by its value exists then it will be used as the temporary directory for Roboelectric classes. If no value or an unexisting folder is set then the default `./tmp` folder will be used. 
 
 You can configure your maven project to set this system property when running JUnit tests with the maven-surefire-plugin. 
